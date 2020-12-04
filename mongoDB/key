@@ -1,0 +1,1 @@
+MONGOURL = mongodb+srv://sourav:sourav@cluster0.plfix.mongodb.net/<dbname>?retryWrites=true&w=majority
