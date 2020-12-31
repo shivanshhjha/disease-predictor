@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-
-export class QuestionTwo extends Component {
+import './question.css'
+import { Link } from 'react-router-dom'
+// import 'bootstrap/dist/css/bootstrap.css'
+export class QuestionOne extends Component {
 
     continue= (e) => {
         e.preventDefault()
@@ -17,58 +19,58 @@ export class QuestionTwo extends Component {
         const {values, handleChanges} = this.props
 
         return (
-            <div>
-                <h1>Symptoms</h1>
-                 <div>
+            <div className='container'>
+                <div className="navbar"><Link to="/" className="link-to-home">Disease </Link></div>
+                 <div className='ques-main'>
+                <p className="header">Symptoms</p><br></br><br></br>
                      <h3>
                          Please check all statements
                           that apply to you
                      </h3>
-                     <div>
-                         <span style={{display:"flex"}}>
+                     <div  >
+                         <span className='ques'>
+                         <p>Current Cancer  {' '}</p>
                          <input type="checkbox" 
-                            name="cardiovascular" 
-                            checked={values.cardiovascular}
-                            value={!values.cardiovascular}
-                            onChange={handleChanges("cardiovascular")} />
-                            <p>Cardiovascular disease</p>
+                            name="current_cancer" 
+                            checked={values.current_cancer}
+                            value={!values.current_cancer}
+                            onChange={handleChanges("current_cancer")} />
                          </span>
 
-                         <span style={{display:"flex"}}>
+                         <span className='ques'>
+                         <p>Weakened Immune System</p>
                          <input type="checkbox" 
-                            name="lung_disease" 
-                            checked={values.lung_disease}
-                            value={!values.lung_disease}
-                            onChange={handleChanges("lung_disease")} />
-                            <p>Diagnosed chronic lung disease</p>
+                            name="Weakened_immune" 
+                            checked={values.Weakened_immune}
+                            value={!values.Weakened_immune}
+                            onChange={handleChanges("Weakened_immune")} />
                          </span>
 
-                         <span style={{display:"flex"}}>
+                         <span className='ques'>
+                         <p>Obesity</p>
                          <input type="checkbox" 
-                            name="chronic_liver" 
-                            checked={values.chronic_liver}
-                            value={!values.chronic_liver}
-                            onChange={handleChanges("chronic_liver")} />
-                            <p>History of chronic liver disease</p>
+                            name="obesity" 
+                            checked={values.obesity}
+                            value={!values.obesity}
+                            onChange={handleChanges("obesity")} />
                          </span>
 
-                         <span style={{display:"flex"}}>
-                         <input type="checkbox" 
-                            name="chronic_kidney" 
-                            checked={values.chronic_kidney}
-                            value={!values.chronic_kidney}
-                            onChange={handleChanges("chronic_kidney")}
-                            />
-                            <p>History of chronic kidney disease</p>
+                         <span className='ques'>
+                         <p>Diabetes</p>
+                         <input type="checkbox"
+                            name="diabetes" 
+                            checked={values.diabetes}
+                            value={!values.diabetes}
+                            onChange={handleChanges("diabetes")} />
                          </span>
                      </div>
                      
 
                         {/* {console.log(values)} */}
-                        
-                        <button onClick={this.previous}>PREV</button>
-                        <button onClick={this.continue}>NEXT</button>
-
+                        <div>
+                        <button onClick={this.previous} className='btn-submit'>PREV</button>
+                        <button onClick={this.continue} className='btn-submit-r'>NEXT</button>
+                        </div>
                  </div>
                  
             </div>
@@ -76,4 +78,5 @@ export class QuestionTwo extends Component {
     }
 }
 
-export default QuestionTwo
+export default QuestionOne
+

@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 //import RaisedBottom from 'material-ui/RaisedButton'
 import './corona.css'
 
-
-
 export class Introduction extends Component {
 
     continue = (e) => {
@@ -22,7 +20,7 @@ export class Introduction extends Component {
                 <div className="box">
                     <div className="header">Introduction</div>
                     <img src={corona} className="uppperImg" alt="img"></img>
-                    <h1 >Hello!</h1>
+                    <h1 className="hh">Hello!</h1>
                     <p className="content">Our anonymous, reliable WHO-based tool can 
                     help you assess your risk of having COVID-19. By answering
                     a few questions about symptoms, travel and contact with others, 
@@ -33,18 +31,12 @@ export class Introduction extends Component {
                         style={styles.button}
                         onClick={this.continue}
                     /> */}
-                    <button onClick={this.continue}>NEXT</button>
+                    <button className="myButton" onClick={this.continue}>NEXT</button>
                 </div>
                 
              </div> 
             </>
         )
-    }
-}
-
-const styles = {
-    button: {
-        margin: 15
     }
 }
 

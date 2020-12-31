@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link as LinkR} from 'react-router-dom'
 import {
     Container,
     FormWrap,
@@ -25,7 +26,7 @@ const Signin = () => {
                             <FormLable htmlFor="for">Password</FormLable>
                             <FormInput type="password" required />
                             <FormButton type="submit">Continue</FormButton>
-                            <Text onClick="/">Forget Password?</Text>
+                            <Text><LinkR to="/about">Forget Password?</LinkR></Text>
                         </Form>
                     </FormContent>
                 </FormWrap>

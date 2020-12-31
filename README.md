@@ -25,3 +25,5 @@ You will also see any lint errors in the console.
 4.1 Inside VSCode, press Ctrl+P, and enter: ext install vscode-styled-components
 5. npm install react-icons --save
 6. Video from pexels.com and unDraw.co
+7. npm i react-chartjs-2 chart.js -> for the chart
+8. npm i numeral for onhover effect on chart

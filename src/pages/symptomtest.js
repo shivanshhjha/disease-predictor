@@ -3,7 +3,7 @@ import React from 'react'
 const SymptomChecker = () => {
     return (
         <div>
-            SymptomChecker
+            <h1>SymptomChecker</h1>
         </div>
     )
 }

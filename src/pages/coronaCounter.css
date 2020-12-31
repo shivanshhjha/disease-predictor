@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #01BF71;
+}
+
+.app-counter{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.app_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 90% will be left part */
+.app_left {
+    flex: 0.9; 
+}
+
+.app_stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+    .app-counter {
+        flex-direction: column;
+    }
+}

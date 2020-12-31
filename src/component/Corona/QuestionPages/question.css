@@ -1,0 +1,132 @@
+.container
+{
+    /* border: 2px solid red; */
+    /* display: flex; */
+    justify-content: center;
+    /* padding: 50px ;  */
+    background-color: #e4fff4;
+    height: 100vh;
+    /* margin-top: 20px; */
+}
+.ques-main
+{
+    /* border: 2px solid yellow; */
+    width: 40%;
+    background-color: rgb(234, 251, 229);
+    margin: auto;
+    margin-top: 5%;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    overflow: auto; 
+    justify-content: center;
+}
+
+.ques
+{
+    /* border: 2px solid green; */
+    display:  flex;
+    padding: 15px;
+    margin: 15px;
+    justify-content: space-between;
+
+}
+
+.btn-submit
+{
+    /* display: flex; */
+     padding: 12px 20px;
+    /* border: solid 2px red;  */
+    margin-left: 55px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 10px;
+    justify-self: space-between;
+    float: left;
+}
+
+.btn-submit-r
+{
+    /* display: flex; */
+     padding: 12px 20px;
+    /* border: solid 2px red;  */
+    margin-right: 75px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 10px;
+    justify-self: space-between;
+    float: right;
+}
+
+.btn-sub-1
+{
+    /* display: flex; */
+     padding: 12px 20px;
+     margin-top: 50px;
+    /* border: solid 2px red;  */
+    cursor: pointer;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    justify-self: space-between;
+    margin-left: 170px;
+}
+
+.btn-sub-2
+{
+    /* display: flex; */
+     padding: 12px 20px;
+     margin-top: 50px;
+    /* border: solid 2px red;  */
+    cursor: pointer;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    justify-self: space-between;
+    margin-right: 170px;
+}
+
+.quesmain
+{
+    width: 100%;
+    padding: 20px;
+    margin:25px;
+}
+.chk
+{
+    /* width: 120px; */
+    /* padding: 0px; */
+    display: inline;
+}
+
+.chkb {
+    margin: 10px;
+}
+
+.ig-r {
+    width: 100px;
+    height: 100px;
+}
+
+.ig-l {
+    width: 120px;
+    height: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-select {
+    justify-content: space-between;
+}
+
+.no {
+    height: 2em;
+    width: 5em;
+    border: 2px solid;
+}
+
+.header {
+    font-size: 2em;
+}

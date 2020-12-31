@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import './question.css'
+import { Link } from 'react-router-dom'
 export class QuestionFour extends Component {
 
     continue = (e) => {
@@ -16,68 +17,69 @@ export class QuestionFour extends Component {
         const {values, handleChanges} = this.props
 
         return (
-            <div>
-                <div>
+            <div className='container'>
+                <div className="navbar"><Link to="/" className="link-to-home">Disease </Link></div>
+                <div className='ques-main'>
                     <h3>Do you have any of the following symptoms?</h3>
-                    <span>
+                    <span  className='ques'>
+                        <p>Fatigue</p>
                         <input type="checkbox" name="" value={!values.fatigue}
                             onChange={handleChanges("fatigue")} />
-                            <p>Fatigue</p>
                     </span>
 
-                    <span>
+                    <span className='ques'>
+                        <p>Muscle pain</p>
                         <input type="checkbox" name="" value={!values.muscle_pain}
                             onChange={handleChanges("muscle_pain")} />
-                            <p>Muscle pain</p>
                     </span>
-                    <span>
+                    <span className='ques'>
+                         <p>Headache</p>
                         <input type="checkbox" name="" value={!values.headache}
                             onChange={handleChanges("headache")} />
-                            <p>Headache</p>
                     </span>
 
-                    <span>
+                    <span className='ques'>
+                        <p>Diarrhea</p>
                         <input type="checkbox" name="" value={!values.diarrhea}
                             onChange={handleChanges("diarrhea")} />
-                            <p>Diarrhea</p>
                     </span>
 
-                    <span>
+                    <span className='ques'>
+                        <p>Nausea</p>
                         <input type="checkbox" name="" value={!values.Nausea}
                             onChange={handleChanges("Nausea")} />
-                            <p>Nausea</p>
                     </span>
-                    <span>
+                    <span className='ques'>
+                    <p>Sore throat</p>
                         <input type="checkbox" name="" value={!values.sore_throat}
                             onChange={handleChanges("sore_throat")} />
-                            <p>Sore throat</p>
                     </span>
 
-                    <span>
+                    <span className='ques'>
+                      <p>Runny nose</p>
                         <input type="checkbox" name="" value={!values.runny_nose}
                             onChange={handleChanges("runny_nose")} />
-                            <p>Runny nose</p>
                     </span>
 
-                    <span>
+                    <span className='ques'>
+                        <p>Vomiting</p>
                         <input type="checkbox" name="" value={!values.vomiting}
                             onChange={handleChanges("vomiting")} />
-                            <p>Vomiting</p>
                     </span>
-                    <span>
+                    <span className='ques'>
+                    <p>Lack of appetite</p>
                         <input type="checkbox" name="" value={!values.lack_of_appeitite}
                             onChange={handleChanges("lack_of_appeitite")} />
-                            <p>Lack of appetite</p>
                     </span>
 
-                </div>
                 <div>
-                    <button onClick={this.previous}>
+                    <button onClick={this.previous} className='btn-submit'>
                         PREV
                     </button>
-                    <button onClick={this.continue}>
+                    <button onClick={this.continue} className='btn-submit-r'>
                         NEXT
                     </button>
+                </div>
                 </div>
             </div>
         )

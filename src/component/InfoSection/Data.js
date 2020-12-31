@@ -18,8 +18,8 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false,
-    image: corona
-    //add "to" item into the json to redirect  
+    image: corona,
+    to: '/coronacounter'  
 };
 
 
@@ -37,7 +37,8 @@ export const homeObjTwo = {
     dark: false,
     primary: false,
     darkText: true,
-    image: chatbot
+    image: chatbot,
+    to: '/symtom' 
 };
 
 export const homeObjThree = {

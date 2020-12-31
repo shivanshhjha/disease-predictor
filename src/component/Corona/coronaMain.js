@@ -15,35 +15,36 @@ export class CoronaChecker extends Component {
 
     state = {
         step: 1,
-        current_cancer: false,
-        Weakened_immune: false,
-        obesity: false,
-        diabetes: false,
-        fever: false,
-        cough: false,
-        cardiovascular: false,
-        lung_disease: false,
-        chronic_liver: false,
-        chronic_kidney: false,
-        shortness_of_breath : false,
-        fever_over: "low",
-        worsening_of_symptom: false,
-        fast_breathing: false,
-        speaking_prob: false,
-        coughing_up_blood: false,
-        age : 0,
+        current_cancer: false, // 2
+        Weakened_immune: false, // 4
+        obesity: false, // 3
+        diabetes: false, // 2
+        fever: false, // 8
+        cough: false, // 8
+        cardiovascular: false, // 2
+        lung_disease: false, // 5
+        chronic_liver: false, // 3
+        chronic_kidney: false, // 3
+        shortness_of_breath : false, // 8
+        fever_over: "low", // low -> 1 medium->2 high->3
+        worsening_of_symptom: false, // 8
+        fast_breathing: false, // 10
+        speaking_prob: false, // 2
+        coughing_up_blood: false, // 8
+        age : 0, //  > 18 -> 3, <18 -> 6, <10, 7 
         gender : "male",
         chances: 0,
-        fatigue: false,
-        muscle_pain: false,
-        headache: false,
-        diarrhea: false,
-        Nausea: false,
-        sore_throat: false,
-        runny_nose: false,
-        vomiting: false,
-        lack_of_appeitite: false,
-        over_sleepy: false
+        fatigue: false, // 8
+        muscle_pain: false, // 3
+        headache: false, // 3
+        diarrhea: false, // 3
+        Nausea: false, // 3
+        sore_throat: false, // 2
+        runny_nose: false, // 1
+        vomiting: false, // 3
+        lack_of_appeitite: false, // 2
+        over_sleepy: false // 2
+        // total: 116
     }
 
     // proceed to next step
@@ -85,8 +86,8 @@ export class CoronaChecker extends Component {
             updatedValue = JSON.parse(updatedValue);
         }
         this.setState({[input]: updatedValue})
-        console.log(e.target.value)
-        console.log(this.state)
+        // console.log(e.target.value)
+        // console.log(this.state)
     }
 
     render() {

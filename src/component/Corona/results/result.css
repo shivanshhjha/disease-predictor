@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans Expanded', sans-serif;
+  }
+
+  .navbar {
+    background-color: #01BF71;
+    padding: 1em;
+    min-height: 7%;
+    max-height: 70px; 
+  }
+
+  .app {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4fff4;
+}
+
+.uppperImg {
+  width: 46%;
+  min-width: 20%;
+  min-height: 20%;
+  height: 50%;
+}
+
+  .box {
+    width: 50%;
+    background-color: rgb(234, 251, 229);
+    margin: auto;
+    margin-top: 5%;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    overflow: auto;
+}
+
+  .box__listOfSymptom li{
+    margin-top: 5px;
+    font-size: large;
+  }
+
+  .final-statement h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+
+  .safe {
+    color: green;
+  }
+
+  .moderate{
+    color: rgb(206, 206, 67);
+  }
+
+  .high {
+    color: red;
+  }
+
+  .final-statement p{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+  }
+
+  .uppperImg-mod {
+    width: 240px;
+    min-width: 20%;
+    min-height: 20%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+  }
+
+  /* .uppperImg-high {
+    width: 240px;
+    min-width: 20%;
+    min-height: 20%;
+    height: auto;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+  } */
